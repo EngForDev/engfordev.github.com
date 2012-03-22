@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: main | engfordev Blog]]></title>
+  <link href="http://EngForDev.github.com/blog/categories/main/atom.xml" rel="self"/>
+  <link href="http://EngForDev.github.com/"/>
+  <updated>2012-03-22T11:52:34+09:00</updated>
+  <id>http://EngForDev.github.com/</id>
+  <author>
+    <name><![CDATA[engfordev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[English for Developers]]></title>
+    <link href="http://EngForDev.github.com/blog/2012/03/19/english-for-developers/"/>
+    <updated>2012-03-19T22:08:00+09:00</updated>
+    <id>http://EngForDev.github.com/blog/2012/03/19/english-for-developers</id>
+    <content type="html"><![CDATA[<h1>요즘 개발자영어에서는...</h1>
+
+<h2>1.플레이 프레임워크 소개문서를 번역하고 있습니다. - NEW</h2>
+
+<ul>
+<li>번역하게 된 계기 등이 궁금하시면 <a href="http://opentutorials.org/course/167/1472">이곳으로…</a></li>
+<li>바로 번역에 참여하시려면 <a href="https://docs.google.com/document/d/1NferctmWGwbE-ZANseBshNr7p4y30KTokStOfE25piU/edit#heading=h.7g51kgoq7teh">이곳으로~</a></li>
+</ul>
+
+
+<h2>2. 아치리눅스 설치방법 번역을 마치고 다듬고 있습니다.</h2>
+
+<ul>
+<li>번역하게 된 계기 등이 궁금하시면 <a href="http://opentutorials.org/course/167/1396">이곳으로..</a></li>
+<li>바로 번역에 참여하시려면 <a href="" title="https://docs.google.com/document/d/1VqEeZ8s2z_yf_Ujj5Xk1sE6zRKyKtYYl-gISRaMeqDk/edit#heading=h.gnor0k7apma9">이곳으로~</a>    <- 100개의 찜 중에 30>51>74개 완료하였습니다!</li>
+</ul>
+
+
+<h3>3. '깃허브 페이지 만드는 법'을 번역하고 있습니다.</h3>
+
+<ul>
+<li>번역에 참여하시려면 <a href="https://docs.google.com/document/d/1JWRn9bDN3YyeMRn2FpWYAuco5jZYefF_0kYD-fIlu50/edit">이곳으로</a> ~ 8개의 찜 중에 5개 남았어요~</li>
+</ul>
+
+
+<h3>4. 영어로 짤막한 일기를 쓰고 있습니다. &lt;- NEW</h3>
+
+<ul>
+<li>3월 14일의 일기를 쓰시려면~ <a href="http://www.facebook.com/groups/engfordev/338078569577308/">이곳으로</a></li>
+<li>그간 쓴 예를 보시려면 <a href="http://opentutorials.org/course/227">이곳으로~</a></li>
+</ul>
+
+
+<h3>5. Dijkstra의 "Go To 문은 해롭다"라는 글을 번역하고 있습니다.</h3>
+
+<ul>
+<li>번역하게 된 계기가 궁금하시면 <a href="http://opentutorials.org/course/167/1437">이곳으로~</a></li>
+<li>번역에 참여하시려면 <a href="https://docs.google.com/document/d/1mW8znza4aedevsFw4jKRHVC6cBYAM_niaL7yiWLs-sM/edit#heading=h.obmx1smx4ar2">이곳으로~</a></li>
+</ul>
+
+
+<h4>오프 모임을 준비하고 있습니다. - Coming Soon</h4>
+
+<ul>
+<li>오프모임 소개글(작성중입니다) - <a href="http://opentutorials.org/course/73/1389">http://opentutorials.org/course/73/1389</a>                  NEW</li>
+<li>준비멤버 첫 모임 - 03/05/월 19:30 - <a href="http://www.facebook.com/events/399024236778845/">http://www.facebook.com/events/399024236778845/</a></li>
+</ul>
+
+
+<h3>최근에 마무리 한 것들</h3>
+
+<ul>
+<li>프로그래밍 자체를 배우고 싶어하는게 아니에요! <a href="http://docs.google.com/document/d/1VDKgYcUjSnyrF2dITTr7-LfApgtzHMvoj1dwtXZauAY/edit">자세히</a></li>
+<li>자바 스크립트 코딩 스타일에 대한 글, 번역한 것을 이쁘게 정리했습니다~~ <a href="http://opentutorials.org/course/167/1363">자세히</a>  - NEW</li>
+<li>Ruby 튜토리얼 번역한 것을 정리해서 공개했습니다~ (>><a href="http://opentutorials.org/course/80">자세히</a>) - NEW</li>
+<li>박준태님이 번역하신 글에 공동으로 피드백을 드렸습니다. (>><a href="http://opentutorials.org/course/167/1351">자세히</a>)</li>
+<li>많은 분들이 읽을 수 있도록 많이많이 퍼뜨려주세요~ (글 <a href="http://rkjun.wordpress.com/2012/02/13/open-source-for-you-korean_translate/">링크</a>)</li>
+<li>프로트 엔드 개발자 면접볼 때 나오는 질문을 번역했고요. (>><a href="https://docs.google.com/document/d/1anFEywxcH5q9ZHio2PtJm_4Beh0nxVeNmlGQCV175zs/edit">자세히</a>)</li>
+</ul>
+
+
+<p>페이스북 그룹에서 진행되니, 그룹을 방문하세요. ^^
+이전에 진행했던 내용을 보시려면, 이곳을 눌러주세요.
+engfordev 사이트에는 <a href="http://engfordev.com/">http://engfordev.com/</a> 로 들어올 수 있습니다.</p>
+]]></content>
+  </entry>
+  
+</feed>
