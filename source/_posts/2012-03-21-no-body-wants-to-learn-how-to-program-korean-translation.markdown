@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Nobody Wants to Learn How to Program (한글번역본)"
+title: "사람들은 프로그래밍 자체를 배우고 싶은게 아니에요!"
 date: 2012-03-21 23:46
 comments: true
 categories: 
 ---
 
-# 사람들은 프로그래밍 자체를 배우고 싶은게 아니에요!
-
-
-※ 원문 및 번역에 관한 정보 : [http://opentutorials.org/course/167/1388](http://opentutorials.org/course/167/1388)
+※ 원문 및 번역에 관해 궁금하시면~ [http://opentutorials.org/course/167/1388](http://opentutorials.org/course/167/1388)
 
 
 사람들은 프로그래밍하는 법 자체를 배우고 싶어하는게 아니에요. 제 생각에는 프로그래밍을 잘 하는 사람들이 프로그래밍을 가르칠 때 몇 가지 문제점이 있는 것 같아요. 프로그래밍 튜토리얼에 보면 보통 앞부분에 프로그래밍 관련 개념들이 나오죠. 변수나 루프, 데이터형 등등이요. 이런 내용을 가지고 가르치기 시작하는 것이 당연하게 보이겠지만, 사실은 프로그래밍을 가르치기에는 적절하지 않은 방법이에요. 왜냐고요? 사람들은 프로그래밍을 배우고 싶어하질 않거든요. 
