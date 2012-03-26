@@ -8,7 +8,7 @@ categories:
 
 Great White Snark 지음 | 2010년 3월 25일
 
-### [번역 프로젝트에 관한 글](http://opentutorials.org/course/167/1551) 
+#### [번역 프로젝트에 관한 글을 보시려면](http://opentutorials.org/course/167/1551) 
 
 * 너드 Nerd
 * 얼간이 Dork
