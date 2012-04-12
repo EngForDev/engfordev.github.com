@@ -9,18 +9,18 @@ footer: false
 
 Octopress ships with the following plugins. Many have been written specially for Octopress, but some have been selected from the Jekyll community with various changes and improvements.
 
-- [HTML5 Video Tag](/docs/plugins/video-tag/) - *embeds mp4 encoded HTML5 videos*
-- [Backtick Code Block](/docs/plugins/backtick-codeblock/) - *for simple lightweight code sharing*
-- [Code Block](/docs/plugins/codeblock/) - *for sharing code with titles and links*
-- [Include Code](/docs/plugins/include-code/) - *embed code from your filesystem with a download link*
-- [Gist Tag](/docs/plugins/gist-tag/) - *automatically downloads and embeds Github gists*
-- [jsFiddle](/docs/plugins/jsfiddle-tag/) - *embeds code from jsFiddle*
-- [Image Tag](/docs/plugins/image-tag/) - *easily post images with class names and titles*
-- [Render Partial](/docs/plugins/render-partial/) - *insert any file into another post or page*
-- [Block Quote](/docs/plugins/blockquote/) - *generate beautiful, semantic block quotes*
-- [Pull Quote](/docs/plugins/pullquote/) - *generate CSS only pull quotes &mdash; no duplicate data, no javascript*
-- [Category Generator](/docs/plugins/category-generator/) - *generates archive pages for each blog category*
-- [Include Array](/docs/plugins/include-array/) - *includes an array of partials specified in the _config.yml*
+- [HTML5 Video Tag](/octopress/plugins/video-tag/) - *embeds mp4 encoded HTML5 videos*
+- [Backtick Code Block](/octopress/plugins/backtick-codeblock/) - *for simple lightweight code sharing*
+- [Code Block](/octopress/plugins/codeblock/) - *for sharing code with titles and links*
+- [Include Code](/octopress/plugins/include-code/) - *embed code from your filesystem with a download link*
+- [Gist Tag](/octopress/plugins/gist-tag/) - *automatically downloads and embeds Github gists*
+- [jsFiddle](/octopress/plugins/jsfiddle-tag/) - *embeds code from jsFiddle*
+- [Image Tag](/octopress/plugins/image-tag/) - *easily post images with class names and titles*
+- [Render Partial](/octopress/plugins/render-partial/) - *insert any file into another post or page*
+- [Block Quote](/octopress/plugins/blockquote/) - *generate beautiful, semantic block quotes*
+- [Pull Quote](/octopress/plugins/pullquote/) - *generate CSS only pull quotes &mdash; no duplicate data, no javascript*
+- [Category Generator](/octopress/plugins/category-generator/) - *generates archive pages for each blog category*
+- [Include Array](/octopress/plugins/include-array/) - *includes an array of partials specified in the _config.yml*
 
 The following filters are used by Octopress, and are documented as necessary in their source.
 

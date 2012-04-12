@@ -23,4 +23,4 @@ detect mp4 video support ([using Modernizr](http://modernizr.com)) and automatic
 <p>You're probably using a browser which supports HTML5 video and you're looking at this page wondering if it really works.
 Reloading the page with the url hash <a href="#flash-test">#flash-test</a> and you'll get to see the flash player fallback.</p>
 
-[&laquo; Plugins page](/docs/plugins)
+[&laquo; Plugins page](/octopress/plugins)

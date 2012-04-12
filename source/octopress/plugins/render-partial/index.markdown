@@ -27,4 +27,4 @@ Any post or page could import this file like this:
 
     {{ "{% render_partial documentation/TOC.markdown" }} %}
 
-[&laquo; Plugins page](/docs/plugins)
+[&laquo; Plugins page](/octopress/plugins)

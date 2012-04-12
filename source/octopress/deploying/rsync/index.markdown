@@ -39,7 +39,7 @@ git config branch.master.remote origin
 ```
 
 
-{% render_partial docs/deploying/_self_hosted_git.markdown %}
+{% render_partial octopress/deploying/_self_hosted_git.markdown %}
 
-{% render_partial docs/deploying/_subdir.markdown %}
+{% render_partial octopress/deploying/_subdir.markdown %}
 

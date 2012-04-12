@@ -11,7 +11,7 @@ You are free to make any changes you like, but I've set up a few patterns to mak
 
 I've broken this up into two sections.
 
-1. [Customizing the Template](/docs/theme/template/) - *Learn how to change the HEAD, sidebar, header, navigation & footer*
-2. [Changing Styles](/docs/theme/styles) - *Learn how to change the color scheme, layout, and override styles*
+1. [Customizing the Template](/octopress/theme/template/) - *Learn how to change the HEAD, sidebar, header, navigation & footer*
+2. [Changing Styles](/octopress/theme/styles) - *Learn how to change the color scheme, layout, and override styles*
 
-Also see [Updating Your Blog &raquo;](/docs/updating)
+Also see [Updating Your Blog &raquo;](/octopress/updating)

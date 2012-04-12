@@ -6,7 +6,7 @@ sidebar: false
 footer: false
 ---
 
-[&laquo; Previous, Theming & Customization](/docs/theme/)
+[&laquo; Previous, Theming & Customization](/octopress/theme/)
 
 ## How to Update
 
@@ -17,7 +17,7 @@ footer: false
     rake update_style             # update the template's style
 ```
 
-This will update your plugins, theme, gemfiles, rakefile and configs, preserving your changes as explained in [Theming &amp; Customization](/docs/theme).
+This will update your plugins, theme, gemfiles, rakefile and configs, preserving your changes as explained in [Theming &amp; Customization](/octopress/theme).
 Read on for an explanation of how all this works.
 
 ### How Updating Works
@@ -68,4 +68,4 @@ If you made changes elsewhere, you can copy them back them from `/source.old` or
 Yep. I figured this is the simplest thing that could possibly work. I don't like the idea of having blog files change if someone wants to update their plugins,
 and I haven't yet figured out a better way. If you have a better idea, [post an issue](https://github.com/imathis/octopress/issues) with your idea for improving this.
 
-See also [Blogging With Octopress](/docs/blogging) and [Theming & Customization](/docs/theme)
+See also [Blogging With Octopress](/octopress/blogging) and [Theming & Customization](/octopress/theme)

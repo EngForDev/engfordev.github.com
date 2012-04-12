@@ -6,7 +6,7 @@ sidebar: false
 footer: false
 ---
 
-Shortly after the 2.0 release Octopress added the `source/_includes/custom` directory. If you don't have this, you'll want to [update](/docs/updating) because it's really nice.
+Shortly after the 2.0 release Octopress added the `source/_includes/custom` directory. If you don't have this, you'll want to [update](/octopress/updating) because it's really nice.
 
     source/
       _includes/    # Main layout partials
@@ -24,7 +24,7 @@ If you'd rather publish your blog index somewhere else like `blog/index.html` do
     rake new_page[index.html]
 ```
 
-Next you'll want to update your `Rakefile` to be sure your new blog index is preserved when you [update Octopress](/docs/updating).
+Next you'll want to update your `Rakefile` to be sure your new blog index is preserved when you [update Octopress](/octopress/updating).
 
 ``` ruby
     blog_index_dir = 'source/blog'
@@ -45,7 +45,7 @@ If you want to add to the `<HEAD>`take a look at `/source/_includes/custom/head.
 Here you can easily change or remove the [Google Webfonts](http://google.com/webfonts), insert javascripts, etc.
 
 ### Changing the sidebar
-Octopress integrates with some [3rd party services](/docs/configuring/#third_party) like Twitter, Pinboard and Delicious which appear in the sidebar.
+Octopress integrates with some [3rd party services](/octopress/configuring/#third_party) like Twitter, Pinboard and Delicious which appear in the sidebar.
 In the `_config.yml` you can rearrange these, create custom sidebars for each layout, and add your own sidebar sections.
 
 {% codeblock Sidebar configuration (_config.yml) %}

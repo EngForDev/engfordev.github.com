@@ -32,4 +32,4 @@ Filler text courtesy of [Bacon Ipsum](http://baconipsum.com), Images courtesy of
 
 {% img http://placekitten.com/300/500 150 250 "Place Kitten #4" "An image of a very cute kitten" %}
 
-[&laquo; Plugins page](/docs/plugins)
+[&laquo; Plugins page](/octopress/plugins)
