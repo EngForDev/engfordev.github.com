@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Sharing Code Snippets - engfordev Blog</title>
+  <meta name="author" content="engfordev">
+
+  
+  <meta name="description" content="Sharing Code Snippets Jul 19th, 2011 &laquo; Previous, Blogging Basics Sharing code is important, and blogging about it should be easy and beautiful &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://EngForDev.github.com/octopress/blogging/code">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="engfordev Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">engfordev Blog</a></h1>
+  
+    <h2>English For Developers</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:EngForDev.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Sharing Code Snippets</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-19T18:10:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p><a href="/docs/blogging">&laquo; Previous, Blogging Basics</a></p>
+
+<p>Sharing code is important, and blogging about it should be easy and beautiful.
+That&#8217;s why Octopress is packed with features to make blogging your code a breeze.
+Though Jekyll comes with support for <a href="http://pygments.org">Pygments syntax highlighting</a>,
+Octopress makes it way better. Here&#8217;s how.</p>
+
+<ul>
+<li>A Sass port of <a href="http://ethanschoonover.com/solarized">Solarized syntax highlighting</a> created specifically for Octopress.</li>
+<li>Gist code embedding - by <a href="https://gist.github.com/1027674">Brandon Tilly</a>.</li>
+<li>Insert code snippets from your filesystem with a download link.</li>
+<li>Easy inline code blocks with <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> and optional download links.</li>
+<li>Pygments caching - a <a href="https://github.com/rsim/blog.rayapps.com/blob/master/_plugins/pygments_cache_patch.rb">Jekyll community plugin</a>.</li>
+<li>Table based line numbers added with javascript.</li>
+</ul>
+
+
+<h2>Solarized Highlighting</h2>
+
+<p><a href="http://ethanschoonover.com/solarized">Solarized</a> has a beautiful syntax highlighting color scheme, but reproducing it requires a highly sophisticated highlighting engine.
+<a href="http://pygments.org">Pygments</a> (the highlighter Jekyll uses) processes code snippets into styleable HTML, but it isn&#8217;t nearly as powerful as the highlighting engine in Vim for example.
+In order to port Solarized theme to octopress, I processed its <a href="https://github.com/altercation/solarized/tree/master/utils/tests">test files</a> with Pygments and styled the output with Sass while comparing
+them to the Vim rendered versions.</p>
+
+<p>Check out the <a href="/docs/blogging/code/test">test page</a> to see the results.</p>
+
+<h2>Backtick Code Blocks</h2>
+
+<p>File /Users/marocchino/Documents/engfordev.github.com/source/docs/plugins/backtick-codeblock/index.markdown could not be found</p>
+
+<h2>Gist Embedding</h2>
+
+<p>File /Users/marocchino/Documents/engfordev.github.com/source/docs/plugins/gist-tag/index.markdown could not be found</p>
+
+<h2>Include Code Snippets</h2>
+
+<p>File /Users/marocchino/Documents/engfordev.github.com/source/docs/plugins/include-code/index.markdown could not be found</p>
+
+<h2>Inline Code Blocks</h2>
+
+<p>File /Users/marocchino/Documents/engfordev.github.com/source/docs/plugins/codeblock/index.markdown could not be found</p>
+
+<p>Also, see <a href="/docs/blogging/plugins">Blogging with Plugins</a> and <a href="/docs/plugins">The Octopress plugins page</a></p>
+
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - engfordev -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

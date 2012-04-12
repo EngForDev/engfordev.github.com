@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>배포하기 - engfordev Blog</title>
+  <meta name="author" content="engfordev">
+
+  
+  <meta name="description" content="배포하기 May 22nd, 2012 옥토프레스 블로그를 깔끔하고 쉽게 배포하는 방법을 소개합니다. 깃헙 페이지 블로그를 Github의 Pages 서비스에 호스팅하는건 공짜이고 다른 도메인으로 연결할 수도 있습니다.배포를 하려면 간단히 Github의 저장소에 푸쉬만 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://EngForDev.github.com/octopress/deploying">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="engfordev Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">engfordev Blog</a></h1>
+  
+    <h2>English For Developers</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:EngForDev.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">배포하기</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-22T00:00:00+09:00" pubdate data-updated="true">May 22<span>nd</span>, 2012</time></p>
+  </header>
+  
+  <p>옥토프레스 블로그를 깔끔하고 쉽게 배포하는 방법을 소개합니다.</p>
+
+<h2>깃헙 페이지</h2>
+
+<p>블로그를 Github의 <a href="pages.github.com">Pages 서비스</a>에 호스팅하는건 공짜이고 다른 도메인으로 연결할 수도 있습니다.배포를 하려면 간단히 Github의 저장소에 푸쉬만 하면 됩니다. 이런 점은 개인용 블로그를 운영하기에도 좋고요, pull request와 커밋 방식으로 팀원의 참여가 이루어지는 그룹 블로그 운영하기에도 매우 좋습니다.</p>
+
+<p><a href="/octopress/deploying/github">깃헙 페이지(Github Pages)에 배포하기 &raquo;</a></p>
+
+<h2>Heroku</h2>
+
+<p>깃헙 페이지(Github Pages)처럼, Heroku도 공짜입니다. 그리고 다른 도메인을 연결할 수 있고 배포환경은 깃(git)을 기반으로 합니다. Heroku는 깃헙 페이지보다 더 단순하고, 블로그 저장소를 비공개로 관리할 수 있다는 장점이 있습니다.</p>
+
+<p><a href="/octopress/deploying/heroku">Heroku에 배포하기 &raquo;</a></p>
+
+<h2>Rsync</h2>
+
+<p>웹 호스팅 서비스를 이용하고 있다면, <a href="http://en.wikipedia.org/wiki/Rsync">Rsync</a>로 배포할 수도 있습니다. 이렇게 배포하면 SSH를 사용해서 새로운 파일이나 변경된 파일을 동기화시키기 때문에 매우 빠릅니다.</p>
+
+<p>SSH 방식의 접근을 지원하는 웹호스팅 사이트를 찾으신다면, 이 사이트를 살펴 보세요. <a href="http://www.dreamhost.com/r.cgi?109007">Dreamhost</a> (저는 2005년부터 이 사이트를 쓰고 있는데요, 만족하고 있답니다.)</p>
+
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - engfordev -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Configuring Octopress - engfordev Blog</title>
+  <meta name="author" content="engfordev">
+
+  
+  <meta name="description" content="Configuring Octopress Jul 19th, 2011 &laquo; Previous, Octopress Setup 저는 옥토프레스의 설정을 정말 단순하게 유지하려고 노력했습니다. 여러분은 ‘Rakefile’과 ‘_config.yml’ 파일만 수정하면 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://EngForDev.github.com/octopress/configuring">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="engfordev Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">engfordev Blog</a></h1>
+  
+    <h2>English For Developers</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:EngForDev.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Configuring Octopress</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-19T00:00:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p><a href="/octopress/setup">&laquo; Previous, Octopress Setup</a></p>
+
+<p>저는 옥토프레스의 설정을 정말 단순하게 유지하려고 노력했습니다. 여러분은 ‘Rakefile’과 ‘_config.yml’ 파일만 수정하면 됩니다. 옥토프레스 설정관련한 파일은 다음과 같습니다.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>_config.yml       <span class="c"># 주요 설정  (지킬 설정)</span>
+</span><span class='line'>Rakefile          <span class="c"># 배포에 관한 설정</span>
+</span><span class='line'>config.rb         <span class="c"># 컴퍼스(Compass) 설정</span>
+</span><span class='line'>config.ru         <span class="c"># 랙(Rack) 설정</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> <code>Rakefile</code>안의 설정들은 대부분 배포에 관련된 것들이며, rsync를 사용하지 않는 이상 건드리지 않아도 됩니다.</p>
+
+<h2>블로그 환경설정</h2>
+
+<p>`_config.yml 파일에는 옥토프레스 블로그 설정에 관한 부분이 세 개의 섹션으로 나누어져 있습니다.</p>
+
+<p><strong>내용을 미리 조금 이야기하자면&#8230;:</strong> <code>url</code>은 바꿔야 돼요. 그리고 <code>title</code>, <code>subtitle,</code>author` 부분도 바꾸고 싶을 겁니다. 그리고 서드 파티 서비스를 사용하도록 설정할 수 있습니다.</p>
+
+<h3>주요 설정</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>                <span class="c1"># RSS용으로 url을 다시 만들어낼 때 사용합니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>              <span class="c1"># 헤더하고 타이틀 태그에서 사용합니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span>           <span class="c1"># 헤더에서 설명하기 위해 사용합니다.(description).</span>
+</span><span class='line'><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>             <span class="c1"># RSS, Copyright, 메타데이터에 들어가는 여러분의 이름입니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span>      <span class="c1"># 사이트내 검색에 사용할 간단한 검색 엔진입니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>        <span class="c1"># 사이트에 대해 기본으로 제공하는 간단한 메타 설명입니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">subscribe_rss</span><span class="p-Indicator">:</span>      <span class="c1"># 블로그의 피드에 사용하는 Url입니다. 디폴트는 /atom.xml입니다.</span>
+</span><span class='line'><span class="l-Scalar-Plain">subscribe_email</span><span class="p-Indicator">:</span>    <span class="c1"># 이메일로 구독하기 위한 url 주소입니다. (서비스가 필요하고요.)</span>
+</span><span class='line'><span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span>              <span class="c1"># RSS피드용으로 사용할 이메일 주소입니다. 원하는 경우에 사용하시면 되요.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>주의하세요!</strong> 여러 사람이 쓰는 블로그라면 어쩌면 ‘author’의 값을 당신의 회사나 프로젝트 이름으로 하면 됩니다. 그리고 포스트와 페이지에 실제 작업한 사람을 나타내려면 저자에 대한 메타데이터(author metadata)를 추가하세요.</p>
+
+<h3>지킬(Jekyll) &amp; 플러그인</h3>
+
+<p>여기에 나오는 설정들은 지킬(Jekyll)과 플러그인에서 사용합니다.</p>
+
+<p>지킬 사용이 익숙하지 않으시면, 이곳을 한번 봐주세요. <a href="https://github.com/mojombo/jekyll/wiki/Configuration">configuration octopress</a>에서, 이 문서에서 다루지 않은 옵션들을 볼 수 있습니다. .</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">root</span><span class="p-Indicator">:</span>               <span class="c1"># 상대 주소(url)를 위한 매핑 (기본값은 : /)</span>
+</span><span class='line'><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span>          <span class="c1"># 블로그 포스트를 위한 퍼머링크 (고유주소) 구조</span>
+</span><span class='line'><span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span>             <span class="c1"># 사이트 소스 파일을 위한 디렉토리</span>
+</span><span class='line'><span class="l-Scalar-Plain">destination</span><span class="p-Indicator">:</span>        <span class="c1"># 생성되는 사이트 파일에 대한 디렉토리</span>
+</span><span class='line'><span class="l-Scalar-Plain">plugins</span><span class="p-Indicator">:</span>            <span class="c1"># 지킬 플러그인을 위한 디렉토리</span>
+</span><span class='line'><span class="l-Scalar-Plain">code_dir</span><span class="p-Indicator">:</span>           <span class="c1"># 코드 스니펫에 대한 디렉토리 (또한 include_code plugin에 대한 디렉토리)</span>
+</span><span class='line'><span class="l-Scalar-Plain">category_dir</span><span class="p-Indicator">:</span>       <span class="c1"># 생성되는 블로그 분류 페이지를 위한 카테고리</span>
+</span><span class='line'><span class="l-Scalar-Plain">pygments</span><span class="p-Indicator">:</span>           <span class="c1"># pygments 하이라이트 기능을 끄거나 켜기(토글하기)</span>
+</span><span class='line'><span class="l-Scalar-Plain">paginate</span><span class="p-Indicator">:</span>           <span class="c1"># 블로그의 인덱스 페이지에서 보여줄 포스트 갯수</span>
+</span><span class='line'><span class="l-Scalar-Plain">pagination_dir</span><span class="p-Indicator">:</span>     <span class="c1"># URL에 붙는 페이지의 베이스 경로</span>
+</span><span class='line'><span class="l-Scalar-Plain">recent_posts</span><span class="p-Indicator">:</span>       <span class="c1"># 사이드바에서 보여줄 최근 포스트의 개수</span>
+</span><span class='line'><span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span>     <span class="c1"># 사이드바에서 보여줄 것, 보여주는 순서를 설정함</span>
+</span><span class='line'><span class="l-Scalar-Plain">blog_index_asides</span><span class="p-Indicator">:</span>  <span class="c1"># 블로그 요약문을 사이드바에 보여줄 지 설정하는 것(Optional sidebar config for blog index page)(블로그 요약문)</span>
+</span><span class='line'><span class="l-Scalar-Plain">post_asides</span><span class="p-Indicator">:</span>        <span class="c1"># Optional sidebar config for post layout</span>
+</span><span class='line'><span class="l-Scalar-Plain">page_asides</span><span class="p-Indicator">:</span>        <span class="c1"># Optional sidebar config for page layout</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>블로그 포스트의 영구주소(permalinks)가 표기되는 방식을 바꾸고 싶으시면, 이 문서를 보세요.
+<a href="https://github.com/mojombo/jekyll/wiki/Permalinks">지킬의 영구주소 관련문서</a>.</p>
+
+<p><strong>주의하세요!</strong> 지킬에는 WEBrick서버에 연결해서 하위 디랙토리 발행을 구현한 <code>baseurl</code> 설정이 있지만  <strong>사용하지 마세요.</strong></p>
+
+<p>사이트를 하위 디렉토리(subdirectory)로 발행하려면 이 문서를 보세요. <a href="/octopress/deploying/subdir/">(옥토프레스를 하위 디렉토리에 배포하기)</a>.</p>
+
+<h3 id="third_party">써드 파티 설정</h3>
+
+
+<p>써드 파티를 통합시키기 위한 설정은 이미 준비되어 있습니다. 설정에서 빈 칸을 채우면 사이트에 추가됩니다.</p>
+
+<ul>
+<li><p><strong>트위터</strong> - *트위터 피드 사이드바와 팔로우 버튼, (포스트나 페이지를 공유하는) 트윗버튼을 설정하세요.</p></li>
+<li><p><strong>구글 플러스 원</strong> - *구글 플러스 원 네트워크에서 작성한 포스트와 페이지를 공유하도록 설정하세요.</p></li>
+<li><p><strong>핀보드</strong> - *핀보드에서 즐겨찾기 등록한 것을 블로그의 사이트바에서 보여줍니다.</p></li>
+<li><p><strong>딜리셔스</strong> - *딜리셔스에 최근에 등록한 북마크를 블로그의 사이드바에서 공유하세요..</p></li>
+<li><p><strong>디스커스 댓글</strong> - *사이트에서 disqus를 사용하여 댓글을 달 수 있도록 disqus short name을 여기에 추가하세요.</p></li>
+<li><p><strong>구글 분석기(Google Analytics)</strong> - *구글 분석기로 사이트/블로그를 분석하려면, 여기에 구글 분석기 id를 적어 주세요.</p></li>
+</ul>
+
+
+<p>옥토프레스 레아아웃에서는 이 설정사항(configuration)을 읽어들여서, 사용하도록 설정되있고,  서비스에 필요한 자바스크립트와 html만을 포함시킵니다.</p>
+
+<p><a href="/octopress/blogging/">자, 다음은 옥토프레스로 블로깅 하기로 넘어가죠 &raquo;</a></p>
+
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - engfordev -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

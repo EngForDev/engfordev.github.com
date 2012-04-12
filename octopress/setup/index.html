@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>옥토프레스 설정하기 - engfordev Blog</title>
+  <meta name="author" content="engfordev">
+
+  
+  <meta name="description" content="옥토프레스 설정하기 May 22nd, 2012 먼저, 옥토프레스는 해커들을 위한 블로그 프레임워크라는 점을 강조하고 싶어요.
+옥토프레스를 쓰시려면 Git 기본 사용법이 익숙해야 하고,
+쉘 커맨드에서 편하게 명령어를 실행할 수 있어야 해요.
+이 말이 어렵게 느껴진다면 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://EngForDev.github.com/octopress/setup">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="engfordev Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   class="no-sidebar"  >
+  <header role="banner"><hgroup>
+  <h1><a href="/">engfordev Blog</a></h1>
+  
+    <h2>English For Developers</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:EngForDev.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">옥토프레스 설정하기</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-22T00:00:00+09:00" pubdate data-updated="true">May 22<span>nd</span>, 2012</time></p>
+  </header>
+  
+  <p>먼저, <strong>옥토프레스는 해커들을 위한 블로그 프레임워크</strong>라는 점을 강조하고 싶어요.
+옥토프레스를 쓰시려면 Git 기본 사용법이 익숙해야 하고,
+쉘 커맨드에서 편하게 명령어를 실행할 수 있어야 해요.
+이 말이 어렵게 느껴진다면, 옥토프레스는 아마 힘드실 거에요.</p>
+
+<h2>시작하기 전에</h2>
+
+<p>옥토프레스로 블로깅을 하려면 우선은 <a href="http://git-scm.com/">깃(Git)을 설치</a>해야 합니다. 그리고 루비를 설치해야 해요.
+<strong> 옥토프레스를 쓰려면 루비 1.9.2가 필요합니다</strong> <a href="http://rvm.beginrescueend.com">RVM</a> 이나 <a href="https://github.com/sstephenson/rbenv">rbenv</a>를 사용하면 쉽게 루비 1.9.2를 설치할 수 있어요.</p>
+
+<p>rbenv 와 RVM은 루비 환경 관리툴인데요, 동시에 사용하면 충돌하므로, 하나만 선택해 주세요.</p>
+
+<h3>RVM을 사용하실 경우</h3>
+
+<p>아직 RVM을 사용하지 않으시면, <a href="/octopress/setup/rvm">RVM을 설치하시고</a>  루비 1.9.2를 설치해주세요.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rvm install 1.9.2 <span class="o">&amp;&amp;</span> rvm use 1.9.2
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rbenv를 사용하실 경우</h3>
+
+<p>아직 rbenv를 사용하지 않으시면, <a href="https://github.com/sstephenson/rbenv#section_2">rbenv를 설치하시고</a> <a href="https://github.com/sstephenson/ruby-build">ruby-build를 설치 하시고</a> 루비 1.9.2를 설치해주세요.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rbenv install 1.9.2-p290
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>옥토 프레스 설정하기</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress    <span class="c"># RVM를 사용하시면, .rvmrc 파일을 신뢰하는지 묻는 선택지가 나옵니다 (yes 라고 입력해주세요).</span>
+</span><span class='line'>ruby --version  <span class="c"># 1.9.2버전이어야합니다.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>만약 <code>ruby --version</code>해서 1.9.2이외의 버전이 나오면, <a href="/octopress/setup/rvm">RVM 설치하기</a>부분을 보면서 다시 설치해주세요.</p>
+
+<p>이제 의존라이브러리를 설치합시다.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem install bundler
+</span><span class='line'>rbenv rehash    <span class="c"># rbenv를 사용하신다면, rehash 명령을 실행해서 bundle 명령이 실행되도록 합시다.(*역주:RVM 을 사용하신다면 이 부분은 건너뛰어도 됩니다.)</span>
+</span><span class='line'>bundle install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>기본 테마를 설치합시다.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rake install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>다음 단계</h2>
+
+<ul>
+<li><a href="/octopress/deploying">배포하기</a></li>
+<li><a href="/octopress/configuring">블로그 설정하기</a></li>
+<li><a href="/octopress/blogging">옥토프레스로 블로깅 시작하기</a></li>
+</ul>
+
+
+  
+</article>
+
+</div>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - engfordev -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
